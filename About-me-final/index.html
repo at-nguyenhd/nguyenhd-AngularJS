@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html ng-app="spaApp">
+ 
+<head>
+  <title>Simple SPA</title>
+  <link rel="stylesheet" href="./css/font-awesome.min.css" />
+  <link rel="stylesheet" href="./css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="./css/set1.css">
+
+  <script src="./js/angular.min.js"></script>
+  <script src="./js/angular-route.js"></script>
+  <script src="./js/angular-sanitize.min.js"></script>
+  <script src="./js/app.js"></script>
+  <script src="./js/controller.js"></script>
+  <script src="./js/service.js"></script>
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+ 
+<body>
+  <div class="container">
+    <header>
+      <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+   
+       
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#home">DANG NGUYEN's PROFILE</a>
+          </div>
+   
+          <ul class="nav navbar-nav nav-right">
+            <li><a href="#profile"><i class="fa fa-user" aria-hidden="true"></i> profile</a>
+            </li>
+            <li><a href="#skill"><i class="fa fa-tasks" aria-hidden="true"></i> my skills</a>
+            </li>
+            <li><a href="#exprience"><i class="fa fa-hand-spock-o" aria-hidden="true"></i> my expriences</a>
+            </li>
+            <li><a href="#chord"><i class="fa fa-music" aria-hidden="true"></i> chords</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    
+    <div id="main">
+      <div ng-view class='container'>
+        
+      </div>
+    </div>
+    <br>
+  </div>
+  <div class="background-gray">
+    <div id="contact" class="container">
+      <h2>Contact</h2>
+      <p class="lead">
+        &ldquo;When i get sad, I stop being sad and be awasome instead &rdquo;<br />- <i>Barney Stinson</i>
+      </p>
+
+      <hr />  
+
+      <div class="row">
+        <div class="col-md-6">
+          <ul class="no-bullets">
+            <li>
+              <a href="http://twitter.com/dangnguyen8694" target="_blank">
+              <h2 class="chunhohonti"><i class="fa fa-twitter-square" aria-hidden="true"></i>
+              <span>http://twitter.com/dangnguyen8694</span></h2>
+              </a>
+            </li>
+            <li>
+              <a href="http://www.facebook.com/dangnguyen8694" target="_blank">
+              <h2 class="chunhohonti"><i class="fa fa-facebook-official" aria-hidden="true"></i>
+              <span>http://www.facebook.com/dangnguyen8694<span> </h2>  </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <ul class="no-bullets">
+            <!--<li>
+              <a href="javascript:void(0);">
+                <span class="icon icon-skype"></span>
+                pascalvgemert       </a>
+            </li>-->
+            <li>
+              <a href="mailto:dangnguyen8694@gmail.com">
+                <h2 class="chunhohonti"><i class="fa fa-envelope-square" aria-hidden="true"></i>
+                <span style="">
+                  dangnguyen8694@gmail.com</span></h2>
+              </a>
+            </li>
+            <li>
+              <a href="github.com/at-nguyenhd">
+                <h2 class="chunhohonti"><i class="fa fa-github-square" aria-hidden="true"></i>
+                <span style="">
+                  http://www.github.com/at-nguyenhd</span></h2>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <hr />
+      <div class="container">
+        <iframe class='maps' src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d4549.670240806949!2d107.58915275603418!3d16.485591081767915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x3141a0d918f7f91f%3A0x95c6a5dcac3ce2a0!2zMjk1IENoaSBMxINuZyB04buVIDEwLCBQaMO6IEhp4buHcCwgdHAuIEh14bq_LCBUaOG7q2EgVGhpw6puIEh14bq_LCBWaeG7h3QgTmFt!3m2!1d16.484838!2d107.590322!5e0!3m2!1svi!2s!4v1467772667857" width="100%" height="450" frameborder="0" style="border:0;margin:auto;" allowfullscreen></iframe>
+        <br>
+        <br>
+        <br><br><br>
+      </div>
+    </div>
+  </div>
+</body>
+ 
+</html>

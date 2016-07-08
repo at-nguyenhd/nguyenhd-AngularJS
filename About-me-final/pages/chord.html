@@ -1,0 +1,62 @@
+<div id="experiences" class="container">
+      <h2>Chords</h2>
+<p class="lead">
+  Easy to pick, easy to use, easy to share, easy to ....
+</p>
+<hr />
+
+<!--<div class="alert alert-danger">
+  <strong>Looking for an awesome new challenge somewhere in the neighborhood of Den Bosch or Amsterdam as a Creative PHP Web Developer. </strong>
+</div>-->
+
+
+<h3>List songs</h3>
+<div>
+  <div class="col-md-3">
+     <label for="search">Search</label>
+        <input type="text" class="form-control" id="search" ng-model="query">
+  </div>
+  <div class="col-md-3">
+     <label for="order">Order by</label>
+        <select class="form-control" name="order" ng-model="order">
+          <option value="name">Name</option>
+          <option value="singer">Singer</option>
+          <option value="artist">Artist</option>
+          <option value="beat">Beat</option>
+          <option value="type">Type</option>
+        </select>
+  </div>
+  <div class="col-md-3">
+    <a href="#/list ">See the </a>
+  </div>
+  <div class="col-md-3">
+  </div>
+  
+</div>
+<br><br><br><br><br><br>
+<div class="experiences" ng-repeat="conkaku in listChord | orderBy:order | filter:query ">
+
+          
+  <div class="experience row">
+    <div class="col-md-4">
+      <h4><a href='#/details/{{conkaku.id}}'>{{conkaku.name}}</a></h4>
+      <p class="experience-period">
+        {{conkaku.singer}} - Tone : {{conkaku.tone}}  </p>
+      <p class="experience-period">
+        {{conkaku.beat}} - 
+        {{conkaku.nhip}} </p>
+    </div>
+    <div class="col-md-8">
+      <p>
+        <span class="hidden-phone" ng-bind-html="conkaku.lyricssub">
+        </span>
+        <span class="experience-details">
+          <span class="location">
+            ... <a href='#/details/{{conkaku.id}}'>See more</a>
+          </span>
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+</div>
